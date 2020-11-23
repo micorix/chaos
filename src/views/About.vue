@@ -7,7 +7,7 @@
       <li>Inspiration for creating this website was online lecture at
         <a href="https:/pb.edu.pl/en">Bialystok University of Technology</a>.</li>
       <li>I tried to optimize this app but still generating
-        fractals in browser still has some perf issues.</li>
+        fractals in browser has some perf issues.</li>
       <li>Built by <a href="https://micorix.com">micorix</a> using TS, Vue & Canvas API.
         You can check out the source code on <a href="https://github.com/micorix/chaos">GitHub</a>.</li>
     </ol>
@@ -24,14 +24,6 @@
     width: 60%;
     margin: 10vh auto 5vh auto;
     font-size: 1.2rem;
-  }
-  a {
-    color: var(--primary);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
   h1 {
     margin: 5vh 0;

@@ -23,4 +23,12 @@ body {
 html, body, #app {
   height: 100%;
 }
+a {
+  color: var(--primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
 </style>

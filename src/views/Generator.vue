@@ -1,6 +1,7 @@
 <template>
   <div class="generator">
     <div class="settings-box">
+      <RouterLink to="/" class="go-back"> &larr; Go back</RouterLink>
       <form @submit="handleSubmit">
         <div class="field">
           <label for="n-input">No of sides of polygon</label>
@@ -14,8 +15,9 @@
           </select>
         </div>
         <div class="field">
-          <button type="submit" class="submit-btn">Generate</button>
+          <button type="submit" class="submit-btn" :disabled="isLoading">Generate</button>
         </div>
+        {{ isLoading ? "Generating..." : "" }}
       </form>
     </div>
     <canvas></canvas>
@@ -74,6 +76,7 @@ export default class Home extends Vue {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .settings-box {
