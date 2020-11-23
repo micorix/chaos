@@ -40,7 +40,8 @@ import { generateFractal } from '@/utils/generator'; // @ is an alias to /src
   mounted() {
     this.canvas = document.querySelector('canvas');
     this.canvas.width = window.innerWidth * (2 / 3);
-    this.canvas.height = window.innerHeight * (2 / 3);
+    this.canvas.height = window.innerHeight * (4 / 5);
+    this.size = window.innerHeight * (2 / 3);
     this.ctx = this.canvas.getContext('2d');
     this.ctx.translate(this.canvas.width / 2, this.canvas.height / 2);
   },
